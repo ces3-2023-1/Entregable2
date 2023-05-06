@@ -1,0 +1,16 @@
+<!ELEMENT libros (libro*)>
+<!ELEMENT autores (autor*)>
+<!ELEMENT libro (titulo+,autores*,editorial*,precio*)>
+<!ATTLIST libro anio #PCDATA>
+<!ATTLIST libro codigoPais (ESP | FRA | ITA | ALE) #REQUIRED>
+<!ATTLIST autor foto? CDATA #IMPLIED>
+<!ATTLIST autor cedula ID #REQUIRED>
+<!ELEMENT autor (nombre*,apellido?)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+
+
